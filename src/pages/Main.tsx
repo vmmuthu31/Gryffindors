@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import {AiFillGithub, AiOutlineTwitter} from "react-icons/ai"
+import {AiFillAndroid, AiFillGithub, AiOutlineTwitter} from "react-icons/ai"
 import {FaDiscord, FaLinkedinIn} from "react-icons/fa"
+import {MdOutlineWeb} from "react-icons/md"
 import Bgimg from "../Assets/1st.png"
+import Sidebg from "../Assets/sidebg.png"
+import {FiFigma} from "react-icons/fi"
 import Image from "next/image"
 
 const navigation = [
@@ -165,7 +168,29 @@ export default function Main() {
 />
 </div>
 </div>
+<div className="flex gap-44 ">
+<div>
+<p className="text-6xl font-bold mt-20">What we Do?</p>
+<div className='flex gap-20 mt-20 '><p className='text-6xl'><AiFillAndroid /></p><p className='text-xl'>Building mobile applications is never easy.<br/> P2P lending app ? Logistic App ? E-Commerce App ? <br/>We have done them all. Done them all well.<br/> Done them all fast.
+</p></div>
+<div className='flex gap-20 mt-5'><p className='text-6xl'> <MdOutlineWeb /> </p><p className='text-xl'>We can build any web applications you need. 
+<br/>A personal blog ? Company Profile ? E-commerce ? 
+<br/>or any specific functionalities ? We got you covered! 
+<br/>We have a strong team of web developers that can 
+<br/>follow your stack and needs.</p></div>
+<div className='flex gap-20 mt-5'><p className='text-6xl'><FiFigma /></p><p className='text-xl'>All things are designed. A few things are designed well. 
+<br/>We try to elevate your ideas with great UI/UX design, 
+<br/>suited to your taste, addressing the right pain points.</p></div>
+</div>
+<div>
 
+    <Image className=" max-w-fit mt-32 h-[450px]" src={Sidebg} alt="" />
+</div>
+
+</div>
+<div><p className="text-6xl text-center mt-32 font-bold ">Teams</p>
+
+</div>
       </div>
     </div>
   )

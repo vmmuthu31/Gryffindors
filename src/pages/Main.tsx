@@ -8,6 +8,9 @@ import Bgimg from "../Assets/1st.png"
 import Sidebg from "../Assets/sidebg.png"
 import {FiFigma} from "react-icons/fi"
 import Image from "next/image"
+import Slider from 'react-slick';
+import ProfileCard from './components/ProfileCard';
+
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -20,7 +23,55 @@ const navigation = [
 
 export default function Main() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
+  const handleHover = () => {
+    setIsHovered(!isHovered);
+  };
+  const profiles = [
+    {
+      name: 'Vairamuthu M',
+      email: 'mvairamuthu2003@gmail.com',
+      image: 'https://avatars.githubusercontent.com/u/88650559?v=4',
+      Position: 'Co-Founder',
+      Profession: 'Web3-Developer',
+      Contributor:'Open Source Contributor',
+    },
+    {
+        name: 'Nagi Pragalathan',
+        email: 'nagipragalathan@gmail.com',
+        image: 'https://media.licdn.com/dms/image/D5603AQFHd3kG-7zwxw/profile-displayphoto-shrink_400_400/0/1672584349709?e=1687392000&v=beta&t=bm3h8sVtdgoOx5SR8UcZ0vR-T9lZkvSwdCT_3Nw_xDE',
+        Position: 'Co-Founder',
+        Profession: 'Web3-Developer',
+        Contributor:'Open Source Contributor',
+      },
+      {
+        name: 'Thiru Murugan',
+        email: 'thirumurugan82003@gmail.com',
+        image: 'https://pbs.twimg.com/profile_images/1601831104033755139/AUNQ0wR7_400x400.jpg',
+        Position: 'Co-Founder',
+        Profession: 'Web3-Developer',
+        Contributor:'Open Source Contributor',
+      },
+      {
+        name: 'Prashant',
+        email: 'prashantd048@gmail.com',
+        image: 'https://media.licdn.com/dms/image/D5603AQGDBL7lhmCs6w/profile-displayphoto-shrink_800_800/0/1672680301344?e=1687392000&v=beta&t=93sTRun_BMpArlhKGGPJIik3FEeJl3decLXlvjt347A',
+        Position: 'Co-Founder',
+        Profession: 'Web3-Developer',
+        Contributor:'Open Source Contributor',
+      },
+   
+    
+    
+  ];
 
+  var settings = {
+    dots: false,
+    infinite: false,
+    speed: 0,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <div className="">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -188,8 +239,15 @@ export default function Main() {
 </div>
 
 </div>
-<div><p className="text-6xl text-center mt-32 font-bold ">Teams</p>
-
+<div>
+    <p className="text-6xl text-center mt-32 font-bold ">Teams</p>
+<div className="flex gap-5">
+{/* <Slider {...settings}> */}
+      {profiles.map((profile, index) => (
+        <ProfileCard key={index} {...profile} />
+      ))}
+    {/* </Slider> */}
+    </div>
 </div>
       </div>
     </div>

@@ -249,6 +249,16 @@ export default function Main() {
     {/* </Slider> */}
     </div>
 </div>
+<div >
+      <div >
+        <div className="relative isolate overflow-hidden bg-[#FF00FF33] px-6 pt-16 mt-40 shadow-2xl sm:rounded-3xl ">
+            <p className="text-4xl font-bold  text-center">Discuss A Project</p>
+            <p className="text-lg font-bold mt-2 text-center">The information we will send and respond to you</p>
+            <div className="sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"></div>
+         
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   )

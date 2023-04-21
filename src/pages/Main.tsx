@@ -255,7 +255,6 @@ export default function Main() {
             <p className="text-4xl font-bold  text-center">Discuss A Project</p>
             <p className="text-lg font-bold mt-2 text-center">The information we will send and respond to you</p>
             <div className="sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"></div>
-         
         </div>
       </div>
     </div>

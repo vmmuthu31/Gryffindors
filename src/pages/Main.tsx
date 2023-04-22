@@ -185,7 +185,7 @@ export default function Main() {
           <label className="text-xl pl-10 opacity-60">Phone No.</label>
           <input className="bg-[#000000]  md:w-96 outline-none opacity-60 mx-10 bg-opacity-0 border-b-2 border-white" type="text" />
         </div>
-        <div className="bg-[#000000] flex flex-col gap-4 md:mt-10 md:w-1/2 bg-opacity-40 py-10 rounded-xl">
+        <div className="bg-[#000000] flex flex-col gap-4 mt-10 md:mt-10 md:w-1/2 bg-opacity-40 py-10 rounded-xl">
           <label className="text-xl pl-10 opacity-60">Tell us About your Idea</label>
           <input className="bg-[#000000]  md:w-96 outline-none opacity-60 mx-10 bg-opacity-0 border-b-2 border-white" type="text" />
         </div>

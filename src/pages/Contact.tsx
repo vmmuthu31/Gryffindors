@@ -22,7 +22,7 @@ function Contact() {
         </div>
         <p className="text-3xl text-center font-bold mt-16">Contact US</p>
         <div>
-    <div className="relative isolate overflow-hidden py-10 mx-40 contactcard mt-10 shadow-lg sm:rounded-3xl">
+    <div className="relative isolate overflow-hidden py-10 md:mx-40 contactcard mt-10 shadow-lg sm:rounded-3xl">
       <div className="sm:px-16 flex flex-col md:flex-row  py-5 lg:flex lg:gap-x-20 lg:px-10 lg:pt-0">
         <div className=" flex flex-col  gap-4 md:w-1/2 bg-opacity-40 py-5 rounded-xl">
           <label className="text-xl pl-10 opacity-60">Your Name</label>

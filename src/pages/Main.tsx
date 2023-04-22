@@ -259,7 +259,7 @@ export default function Main() {
               <label className='text-xl pl-10 opacity-60'>Name</label>
               <input className='bg-[#000000] w-96  opacity-60 outline-none  mx-10 bg-opacity-0 border-b-2 border-white' type="text" /> 
               <label className='text-xl pl-10 opacity-60'>Email Id</label>
-              <input className='bg-[#000000] outline-none opacity-60  mx-10 bg-opacity-0 border-b-2 border-white'  type="text" />
+              <input className='bg-[#000000] outline-none opacity-60  mx-10 bg-opacity-0 border-b-2 border-white'  type="email" />
               <label className='text-xl pl-10 opacity-60'>Phone No.</label>
               <input className='bg-[#000000] outline-none  opacity-60 mx-10 bg-opacity-0 border-b-2 border-white' type="text" />
               </div>

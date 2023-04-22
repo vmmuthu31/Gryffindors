@@ -99,3 +99,7 @@ background-clip: text;
     opacity: 1;
   }
   
+
+  .custombg{
+    background-color: rgba(255, 0, 255, 0.2);
+  }

@@ -251,10 +251,24 @@ export default function Main() {
 </div>
 <div >
       <div >
-        <div className="relative isolate overflow-hidden bg-[#FF00FF33] px-6 pt-16 mt-40 shadow-2xl sm:rounded-3xl ">
+        <div className="relative isolate overflow-hidden bg-gradient-to-br from- bg-[#FF00FF] bg-opacity-50 via-white to-rgba(255, 0, 255, 0.2)  shadow-white px-6 pt-16 mt-40 shadow-lg sm:rounded-3xl ">
             <p className="text-4xl font-bold  text-center">Discuss A Project</p>
             <p className="text-lg font-bold mt-2 text-center">The information we will send and respond to you</p>
-            <div className="sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"></div>
+            <div className="sm:px-16 flex md:pt-24 py-32 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+              <div className="bg-[#000000] flex flex-col gap-4 mt-10  bg-opacity-40 py-10 rounded-xl">
+              <label className='text-xl pl-10 opacity-60'>Name</label>
+              <input className='bg-[#000000] w-96  opacity-60 outline-none  mx-10 bg-opacity-0 border-b-2 border-white' type="text" /> 
+              <label className='text-xl pl-10 opacity-60'>Email Id</label>
+              <input className='bg-[#000000] outline-none opacity-60  mx-10 bg-opacity-0 border-b-2 border-white'  type="text" />
+              <label className='text-xl pl-10 opacity-60'>Phone No.</label>
+              <input className='bg-[#000000] outline-none  opacity-60 mx-10 bg-opacity-0 border-b-2 border-white' type="text" />
+              </div>
+              <div className="bg-[#000000] flex flex-col gap-4 mt-10  bg-opacity-40 py-32 rounded-xl">
+              <label className='text-xl pl-10 opacity-60'>Tell us About your Idea</label>
+              <input className='bg-[#000000] w-96 outline-none opacity-60 mx-10 bg-opacity-0 border-b-2 border-white' type="text" /> 
+             
+              </div>
+            </div>
         </div>
       </div>
     </div>

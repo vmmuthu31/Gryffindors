@@ -1,6 +1,17 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 
+const products = [
+    {
+      id: 1,
+      name: 'Starknet India CC Hackathon',
+      href: '#',
+      description: 'Team Gryffindors won Starknet global hackathon, impressing judges with their innovative projects and showcasing their skills to the world. They learned the importance of perseverance and teamwork.',
+      imageSrc: 'https://pbs.twimg.com/profile_banners/1425813537381773314/1674114637/1080x360',
+      imageAlt: '',
+    },
+  ]
+
 function Products() {
   return (
     <div>
@@ -19,6 +30,7 @@ function Products() {
           />
         </div>
         <p className="text-3xl text-center font-bold mt-16">Products</p>
+       
       </div>
     </div>
   )

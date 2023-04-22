@@ -103,3 +103,11 @@ background-clip: text;
   .custombg{
     background-color: rgba(255, 0, 255, 0.2);
   }
+
+  .achievecard{
+    background: rgba(48, 0, 255, 0.09);
+mix-blend-mode: normal;
+border: 2px solid #FFFFFF;
+box-shadow: 20px 20px 4px rgba(255, 255, 255, 0.45);
+border-radius: 40px;
+  }

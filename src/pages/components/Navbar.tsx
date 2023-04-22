@@ -7,12 +7,12 @@ import Link from "next/link"
 
 
 const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Team', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: 'About' },
+    { name: 'Team', href: 'Team' },
     { name: 'Products', href: 'Products' },
     { name: 'Achievements', href: 'Achievements' },
-    { name: 'Contact Us', href: '#' },
+    { name: 'Contact Us', href: 'Contact' },
   ]
 
 function Navbar() {

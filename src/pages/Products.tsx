@@ -57,7 +57,7 @@ function Products() {
               className="group relative productcard md:mt-0 mt-2  rounded-lg flex flex-col overflow-hidden"
             >
               <div className="flex-1 p-4 space-y-2 flex flex-col">
-                <h3 className="font-mediumtext-white text-center text-xl font-bold">
+                <h3 className=" text-white text-center text-xl font-bold">
                     <span aria-hidden="true" className="absolute inset-0" />
                     {product.name}
                 </h3>

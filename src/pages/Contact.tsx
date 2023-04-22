@@ -23,14 +23,22 @@ function Contact() {
         <p className="text-3xl text-center font-bold mt-16">Contact US</p>
         <div>
     <div className="relative isolate overflow-hidden py-10 md:mx-40 contactcard mt-10 shadow-lg sm:rounded-3xl">
-      <div className="sm:px-16 flex flex-col md:flex-row  py-5 lg:flex lg:gap-x-20 lg:px-10 lg:pt-0">
+      <div className="sm:px-16 flex flex-col md:flex-row  lg:flex lg:gap-x-20 lg:px-10 lg:pt-0">
         <div className=" flex flex-col  gap-4 md:w-1/2 bg-opacity-40 py-5 rounded-xl">
-          <label className="text-xl pl-10 opacity-60">Your Name</label>
+          <label className="text-xl pl-10 ">Your Name</label>
           <input className="bg-[#151030] md:w-[400px] opacity-60 outline-none mx-10 bg-opacity-100 text-xl rounded-md px-3 " placeholder='What is your name?' type="text" />
-          <label className="text-xl pl-10 opacity-60">Your Email</label>
+          <label className="text-xl pl-10 ">Your Email</label>
           <input className="bg-[#151030]  md:w-[400px] outline-none opacity-60 mx-10 bg-opacity-100 text-xl rounded-md px-3" placeholder='What is your email?' type="email" />
-          <label className="text-xl pl-10 opacity-60">Description</label>
+          <label className="text-xl pl-10 ">Description</label>
           <textarea className="bg-[#151030] h-32 md:w-[400px] outline-none opacity-60 mx-10 bg-opacity-100 text-xl rounded-md px-3"placeholder='What do you want to say??'/>
+        <div className='mt-2'>
+          <a
+          href=""
+                className=" ml-10 border-2 border-white px-6 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Send
+              </a>
+              </div>
         </div>
         <div>
          <Image className="md:w-[600px] h-full" src={ContactImg} alt="" />

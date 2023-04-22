@@ -3,12 +3,25 @@ import Navbar from './components/Navbar'
 
 const products = [
     {
-      id: 1,
-      name: 'Starknet India CC Hackathon',
-      href: '#',
-      description: 'Team Gryffindors won Starknet global hackathon, impressing judges with their innovative projects and showcasing their skills to the world. They learned the importance of perseverance and teamwork.',
-      imageSrc: 'https://pbs.twimg.com/profile_banners/1425813537381773314/1674114637/1080x360',
-      imageAlt: '',
+      id:1,
+      name: 'CodeslessCrypto',
+      description: 'Codeless crypto refers to no-code tools in Web3 that allow users to integrate cryptocurrency and blockchain functionality into their applications without writing any code.',
+      githublink: '',
+      mediumlink: '',
+    },
+    {
+      id:2,
+      name: 'Green DAO',
+      description: 'Building an DAO to help the farmers with the supplychain management, getting identity and apply for the loans.',
+      githublink: '',
+      mediumlink: '',
+    },
+    {
+      id:3,
+      name: 'NFT Media',
+      description: 'A decentralised social media platform with account abstraction using Biconomy, storing images and videos in IPFS using NFT Storage and SQL queries using Tableland.',
+      githublink: '',
+      mediumlink: '',
     },
   ]
 
@@ -30,7 +43,36 @@ function Products() {
           />
         </div>
         <p className="text-3xl text-center font-bold mt-16">Products</p>
-       
+        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 mt-20 px-20 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="group relative productcard   rounded-lg flex flex-col overflow-hidden"
+            >
+              <div className="flex-1 p-4 space-y-2 flex flex-col">
+                <h3 className="font-mediumtext-white text-center text-xl font-bold">
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    {product.name}
+                </h3>
+                <p className="text-md text-center text-gray-200">{product.description}</p>
+                <div className="py-5 space-x-3">
+                <a
+                href={product.githublink}
+                className="rounded-2xl border-2 border-blue-800 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Github
+              </a>
+                <a
+                href={product.mediumlink}
+                className="rounded-2xl border-2 border-blue-800 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Medium
+              </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

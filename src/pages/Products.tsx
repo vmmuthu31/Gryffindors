@@ -50,11 +50,11 @@ function Products() {
           />
         </div>
         <p className="text-3xl text-center font-bold mt-16">Products</p>
-        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 mt-20 px-20 pb-10 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
+        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 mt-5  pb-10 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
           {products.map((product) => (
             <div
               key={product.id}
-              className="group relative productcard   rounded-lg flex flex-col overflow-hidden"
+              className="group relative productcard md:mt-0 mt-2  rounded-lg flex flex-col overflow-hidden"
             >
               <div className="flex-1 p-4 space-y-2 flex flex-col">
                 <h3 className="font-mediumtext-white text-center text-xl font-bold">

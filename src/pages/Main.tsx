@@ -22,7 +22,7 @@ export default function Main() {
       email: 'mvairamuthu2003@gmail.com',
       image: 'https://avatars.githubusercontent.com/u/88650559?v=4',
       position: 'Co-Founder',
-      rpofession: 'Web3-Developer',
+      profession: 'Web3-Developer',
       contributor:'Open Source Contributor',
     },
     {

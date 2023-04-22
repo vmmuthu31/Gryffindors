@@ -23,6 +23,13 @@ const products = [
       githublink: '',
       mediumlink: '',
     },
+    {
+      id:4,
+      name: 'NFT Craft',
+      description: 'Creating own world in a minecraft like environment. The players progress will be stored . Each new block is a NFT owned by the player.',
+      githublink: '',
+      mediumlink: '',
+    },
   ]
 
 function Products() {
@@ -43,7 +50,7 @@ function Products() {
           />
         </div>
         <p className="text-3xl text-center font-bold mt-16">Products</p>
-        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 mt-20 px-20 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
+        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 mt-20 px-20 pb-10 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
           {products.map((product) => (
             <div
               key={product.id}

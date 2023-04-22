@@ -21,33 +21,33 @@ export default function Main() {
       name: 'Vairamuthu M',
       email: 'mvairamuthu2003@gmail.com',
       image: 'https://avatars.githubusercontent.com/u/88650559?v=4',
-      Position: 'Co-Founder',
-      Profession: 'Web3-Developer',
-      Contributor:'Open Source Contributor',
+      position: 'Co-Founder',
+      profession: 'Web3-Developer',
+      contributor:'Open Source Contributor',
     },
     {
         name: 'Nagi Pragalathan',
         email: 'nagipragalathan@gmail.com',
         image: 'https://media.licdn.com/dms/image/D5603AQFHd3kG-7zwxw/profile-displayphoto-shrink_400_400/0/1672584349709?e=1687392000&v=beta&t=bm3h8sVtdgoOx5SR8UcZ0vR-T9lZkvSwdCT_3Nw_xDE',
-        Position: 'Co-Founder',
-        Profession: 'Web3-Developer',
-        Contributor:'Open Source Contributor',
+        position: 'Co-Founder',
+        profession: 'Web3-Developer',
+        contributor:'Open Source Contributor',
       },
       {
         name: 'Thiru Murugan',
         email: 'thirumurugan82003@gmail.com',
         image: 'https://pbs.twimg.com/profile_images/1601831104033755139/AUNQ0wR7_400x400.jpg',
-        Position: 'Co-Founder',
-        Profession: 'Web3-Developer',
-        Contributor:'Open Source Contributor',
+        position: 'Co-Founder',
+        profession: 'Web3-Developer',
+        contributor:'Open Source Contributor',
       },
       {
         name: 'Prashant',
         email: 'prashantd048@gmail.com',
         image: 'https://media.licdn.com/dms/image/D5603AQGDBL7lhmCs6w/profile-displayphoto-shrink_800_800/0/1672680301344?e=1687392000&v=beta&t=93sTRun_BMpArlhKGGPJIik3FEeJl3decLXlvjt347A',
-        Position: 'Co-Founder',
-        Profession: 'Web3-Developer',
-        Contributor:'Open Source Contributor',
+        position: 'Co-Founder',
+        profession: 'Web3-Developer',
+        contributor:'Open Source Contributor',
       },
    
     
@@ -70,7 +70,7 @@ export default function Main() {
           aria-hidden="true"
         >
           <div
-            className="relative left-[calc(50%-11rem)] aspect-[1255/428] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#001DFF] to-[#001DFF] opacity-80 sm:left-[calc(60%-20rem)] sm:w-[62.1875rem]"
+            className="relative left-[calc(90%-11rem)] aspect-[1255/428] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#001DFF] to-[#001DFF] opacity-80 sm:left-[calc(60%-20rem)] sm:w-[62.1875rem]"
             style={{
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -99,7 +99,7 @@ export default function Main() {
           aria-hidden="true"
 >
 <div
-  className= " relative lg:aspect-[1255/628] lg:w-[36.125rem]  rotate-[30deg] lg:bg-gradient-to-r from-[#001DFF] to-[#001DFF] opacity-80 lg:left-[calc(100%-60rem)] md:w-[62.1875rem]"
+  className= " relative aspect-[1255/628] w-[36.125rem]  rotate-[30deg] lg:bg-gradient-to-r from-[#001DFF] to-[#001DFF] opacity-80 lg:left-[calc(100%-60rem)] md:w-[62.1875rem]"
   style={{
     clipPath:
       'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -124,7 +124,7 @@ export default function Main() {
           aria-hidden="true"
 >
 <div
-  className="relative  lg:aspect-[100/100] lg:w-[36.125rem]  rotate-[290deg] bg-gradient-to-r from-[#001DFF] to-[#001DFF] opacity-80 sm:right-[calc(20%-60rem)] sm:w-[62.1875rem]"
+  className="  lg:aspect-[200/100] lg:w-[36.125rem]  rotate-[290deg] bg-gradient-to-r from-[#001DFF] to-[#001DFF] opacity-80 lg:left-[calc(90%-60rem)] sm:w-[62.1875rem]"
   style={{
     clipPath:
       'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',

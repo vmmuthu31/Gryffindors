@@ -22,7 +22,7 @@ export default function Main() {
       email: 'mvairamuthu2003@gmail.com',
       image: 'https://avatars.githubusercontent.com/u/88650559?v=4',
       position: 'Co-Founder',
-      profession: 'Web3-Developer',
+      rpofession: 'Web3-Developer',
       contributor:'Open Source Contributor',
     },
     {
@@ -70,7 +70,7 @@ export default function Main() {
           aria-hidden="true"
         >
           <div
-            className="relative left-[calc(90%-11rem)] aspect-[1255/428] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#001DFF] to-[#001DFF] opacity-80 sm:left-[calc(60%-20rem)] sm:w-[62.1875rem]"
+            className="relative left-[calc(50%-11rem)] aspect-[1255/428] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#001DFF] to-[#001DFF] opacity-80 sm:left-[calc(60%-20rem)] sm:w-[62.1875rem]"
             style={{
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -99,7 +99,7 @@ export default function Main() {
           aria-hidden="true"
 >
 <div
-  className= " relative aspect-[1255/628] w-[36.125rem]  rotate-[30deg] lg:bg-gradient-to-r from-[#001DFF] to-[#001DFF] opacity-80 lg:left-[calc(100%-60rem)] md:w-[62.1875rem]"
+  className= " relative lg:aspect-[1255/628] lg:w-[36.125rem]  rotate-[30deg] lg:bg-gradient-to-r from-[#001DFF] to-[#001DFF] opacity-80 lg:left-[calc(100%-60rem)] md:w-[62.1875rem]"
   style={{
     clipPath:
       'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -124,7 +124,7 @@ export default function Main() {
           aria-hidden="true"
 >
 <div
-  className="  lg:aspect-[200/100] lg:w-[36.125rem]  rotate-[290deg] bg-gradient-to-r from-[#001DFF] to-[#001DFF] opacity-80 lg:left-[calc(90%-60rem)] sm:w-[62.1875rem]"
+  className="relative  lg:aspect-[100/100] lg:w-[36.125rem]  rotate-[290deg] bg-gradient-to-r from-[#001DFF] to-[#001DFF] opacity-80 sm:right-[calc(20%-60rem)] sm:w-[62.1875rem]"
   style={{
     clipPath:
       'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -185,7 +185,7 @@ export default function Main() {
           <label className="text-xl pl-10 opacity-60">Phone No.</label>
           <input className="bg-[#000000]  md:w-96 outline-none opacity-60 mx-10 bg-opacity-0 border-b-2 border-white" type="text" />
         </div>
-        <div className="bg-[#000000] flex flex-col gap-4 md:mt-10 mt-10 md:w-1/2 bg-opacity-40 py-10 rounded-xl">
+        <div className="bg-[#000000] flex flex-col gap-4 md:mt-10 md:w-1/2 bg-opacity-40 py-10 rounded-xl">
           <label className="text-xl pl-10 opacity-60">Tell us About your Idea</label>
           <input className="bg-[#000000]  md:w-96 outline-none opacity-60 mx-10 bg-opacity-0 border-b-2 border-white" type="text" />
         </div>

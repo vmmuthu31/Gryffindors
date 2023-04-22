@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 
+interface Profile {
+  name: string;
+  email: string;
+  image: string;
+  Position: string;
+  Profession: string;
+  Contributor:string;
+}
 
-
-const ProfileCard = ({ name, email, image, Position,Profession ,Contributor}) => {
+const ProfileCard = ({ name, email, image, Position,Profession ,Contributor}: Profile) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {

@@ -4,12 +4,12 @@ interface Profile {
   name: string;
   email: string;
   image: string;
-  Position: string;
-  Profession: string;
-  Contributor:string;
+  position: string;
+  profession: string;
+  contributor: string;
 }
 
-const ProfileCard = ({ name, email, image, Position,Profession ,Contributor}: Profile) => {
+const ProfileCard = ({ name, email, image, position, profession, contributor }: Profile) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -19,7 +19,7 @@ const ProfileCard = ({ name, email, image, Position,Profession ,Contributor}: Pr
   return (
     <div className="profile-card-container">
       <div
-        className="profile-card"
+        className="profile-card relative"
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
       >
@@ -27,15 +27,15 @@ const ProfileCard = ({ name, email, image, Position,Profession ,Contributor}: Pr
           <img src={image} alt="Profile" />
         </div>
         {isHovered ? (
-          <div className="profile-card__hover-details">
-            <div className="profile-card__hover-name">{Position}</div>
-            <div className="profile-card__hover-email">{Profession}</div>
-            <div className="profile-card__hover-info">{Contributor}</div>
+          <div className="profile-card__hover-details absolute top-0 left-0 bg-gray-100 text-gray-800 py-4 px-6 w-full h-full flex flex-col justify-center">
+            <div className="profile-card__hover-name text-lg font-bold">{position}</div>
+            <div className="profile-card__hover-email text-sm font-medium">{profession}</div>
+            <div className="profile-card__hover-info text-sm">{contributor}</div>
           </div>
         ) : (
-          <div className="profile-card__footer">
-            <div className="profile-card__name">{name}</div>
-            <div className="profile-card__email">{email}</div>
+          <div className="profile-card__footer bg-white p-4">
+            <div className="profile-card__name text-lg font-bold">{name}</div>
+            <div className="profile-card__email text-sm font-medium">{email}</div>
           </div>
         )}
       </div>

@@ -57,7 +57,7 @@ function Navbar() {
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <p className='text-xl font-bold'>Gryffindors</p>
+                <p className='text-xl text-black font-bold'>Gryffindors</p>
               </Link>
               <button
                 type="button"

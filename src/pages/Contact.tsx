@@ -26,9 +26,9 @@ function Contact() {
       <div className="sm:px-16 flex flex-col md:flex-row  lg:flex lg:gap-x-20 lg:px-10 lg:pt-0">
         <div className=" flex flex-col  gap-4 md:w-1/2 bg-opacity-40 py-5 rounded-xl">
           <label className="text-xl pl-10 ">Your Name</label>
-          <input className="bg-[#151030] md:w-[400px] opacity-60 outline-none mx-10 bg-opacity-100 text-xl rounded-md px-3 " placeholder='What is your name?' type="text" />
+          <input className="bg-[#151030] h-10 md:w-[400px] opacity-60 outline-none mx-10 bg-opacity-100 text-xl rounded-md px-3 " placeholder='What is your name?' type="text" />
           <label className="text-xl pl-10 ">Your Email</label>
-          <input className="bg-[#151030]  md:w-[400px] outline-none opacity-60 mx-10 bg-opacity-100 text-xl rounded-md px-3" placeholder='What is your email?' type="email" />
+          <input className="bg-[#151030] h-10 md:w-[400px] outline-none opacity-60 mx-10 bg-opacity-100 text-xl rounded-md px-3" placeholder='What is your email?' type="email" />
           <label className="text-xl pl-10 ">Description</label>
           <textarea className="bg-[#151030] h-32 md:w-[400px] outline-none opacity-60 mx-10 bg-opacity-100 text-xl rounded-md px-3"placeholder='What do you want to say??'/>
         <div className='mt-2'>
@@ -40,8 +40,8 @@ function Contact() {
               </a>
               </div>
         </div>
-        <div>
-         <Image className="md:w-[600px] h-full" src={ContactImg} alt="" />
+        <div className='flex justify-center'>
+         <Image className="md:w-[600px] h-full " src={ContactImg} alt="" />
         </div>
       </div>
     </div>

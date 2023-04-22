@@ -1,8 +1,8 @@
 import React,{ useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { AiFillGithub, AiOutlineTwitter} from "react-icons/ai"
-import {FaDiscord, FaLinkedinIn} from "react-icons/fa"
+import { AiFillGithub, AiFillYoutube,AiOutlineTwitter} from "react-icons/ai"
+import { FaLinkedinIn} from "react-icons/fa"
 import Link from "next/link"
 
 
@@ -45,10 +45,10 @@ function Navbar() {
             ))}
           </div>
           <div className="hidden text-2xl space-x-3 lg:flex lg:flex-1 lg:justify-end">
-          <AiFillGithub />
-          <FaDiscord />
-          <FaLinkedinIn />
-          <AiOutlineTwitter />
+          <a href="https://github.com/GryffindorsDAO"  target="_blank"> <AiFillGithub /></a>
+          <a href="https://www.youtube.com/channel/UCAvUOFGXknT8ueKQQp6SRKQ"  target="_blank">   <AiFillYoutube /></a>
+          <a href="https://www.linkedin.com/in/gryffindors-guild-177295260/"  target="_blank">  <FaLinkedinIn /></a>
+         <a href="https://twitter.com/Gryffindors_W3"target="_blank"> <AiOutlineTwitter /></a>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -82,10 +82,10 @@ function Navbar() {
                   ))}
                 </div>
                 <div className=" text-2xl space-x-3 flex  text-black lg:justify-end">
-          <AiFillGithub />
-          <FaDiscord />
-          <FaLinkedinIn />
-          <AiOutlineTwitter />
+                <a href="https://github.com/GryffindorsDAO"  target="_blank"> <AiFillGithub /></a>
+          <a href="https://www.youtube.com/channel/UCAvUOFGXknT8ueKQQp6SRKQ"  target="_blank">   <AiFillYoutube /></a>
+          <a href="https://www.linkedin.com/in/gryffindors-guild-177295260/"  target="_blank">  <FaLinkedinIn /></a>
+         <a href="https://twitter.com/Gryffindors_W3"target="_blank"> <AiOutlineTwitter /></a>
           </div>
               </div>
             </div>

@@ -266,7 +266,6 @@ export default function Main() {
               <div className="bg-[#000000] flex flex-col gap-4 mt-10  bg-opacity-40 py-32 rounded-xl">
               <label className='text-xl pl-10 opacity-60'>Tell us About your Idea</label>
               <input className='bg-[#000000] w-96 outline-none opacity-60 mx-10 bg-opacity-0 border-b-2 border-white' type="text" /> 
-             
               </div>
             </div>
         </div>

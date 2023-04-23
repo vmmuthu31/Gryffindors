@@ -124,3 +124,11 @@ border-radius: 30px;
 border: 2px solid #FFFFFF;
 border-radius: 40px;
   }
+
+  .teamcard{
+background: rgba(48, 0, 255, 0.09);
+mix-blend-mode: normal;
+border: 2px solid #FFFFFF;
+box-shadow: 18px 18px 4px rgba(59, 59, 59, 0.56);
+border-radius: 40px;
+  }

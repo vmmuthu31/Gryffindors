@@ -49,7 +49,7 @@ function Products() {
             }}
           />
         </div>
-        <p className="text-3xl text-center font-bold mt-16">Products</p>
+        <p className="text-3xl text-center font-bold mt-16">Products/Projects</p>
         <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 mt-5  pb-10 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
           {products.map((product) => (
             <div

@@ -30,6 +30,7 @@ const products = [
       githublink: '',
       mediumlink: '',
     },
+    // Add our products/projects 
   ]
 
 function Products() {

@@ -5,6 +5,7 @@ import { FaDiscord, FaLinkedinIn } from 'react-icons/fa'
 
 const teamlist = [
   {
+    // Add our team here
     id: 8,
     name: 'Rajan',
     href: '#',
@@ -116,7 +117,6 @@ const teamlist = [
     linkedin: '',
     twitterLink: '',
   },
-  
 ]
 
 function Team() {

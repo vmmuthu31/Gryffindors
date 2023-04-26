@@ -7,7 +7,7 @@ import nishant from "../Assets/nishanat.jpeg";
 const teamlist = [
   {
     // Add our team here
-    id: 8,
+    id: 1,
     name: "Rajan",
     href: "#",
     position: "Co-Founder",
@@ -22,7 +22,7 @@ const teamlist = [
     twitterLink: "https://twitter.com/Aravinth_Rajan_",
   },
   {
-    id: 7,
+    id: 2,
     name: "Ganesh",
     href: "#",
     position: "Co-Founder",
@@ -37,7 +37,7 @@ const teamlist = [
     twitterLink: "",
   },
   {
-    id: 6,
+    id: 3,
     name: "Karthik",
     href: "#",
     position: "Co-Founder",
@@ -52,7 +52,7 @@ const teamlist = [
     twitterLink: "",
   },
   {
-    id: 5,
+    id: 4,
     name: "Maheshwaran",
     href: "#",
     position: "Co-Founder",
@@ -67,7 +67,7 @@ const teamlist = [
     twitterLink: "",
   },
   {
-    id: 4,
+    id: 5,
     name: "Prashant",
     href: "#",
     position: "Co-Founder",
@@ -82,7 +82,7 @@ const teamlist = [
     twitterLink: "https://twitter.com/prashantdp7",
   },
   {
-    id: 3,
+    id: 6,
     name: "Thiru Murugan",
     href: "#",
     position: "Co-Founder",
@@ -97,7 +97,7 @@ const teamlist = [
     twitterLink: "https://twitter.com/Thiru_levi",
   },
   {
-    id: 2,
+    id: 7,
     name: "Nagi Pragalathan",
     href: "#",
     position: "Co-Founder",
@@ -112,7 +112,7 @@ const teamlist = [
     twitterLink: "https://twitter.com/nagipragalathan",
   },
   {
-    id: 1,
+    id: 8,
     name: "Vairamuthu M",
     href: "#",
     position: "Co-Founder",
@@ -126,7 +126,7 @@ const teamlist = [
     twitterLink: "",
   },
   {
-    id: 1,
+    id: 9,
     name: "Vishal Aakash H",
     href: "#",
     position: "Co-Founder",
@@ -141,7 +141,7 @@ const teamlist = [
     twitterLink: "https://twitter.com/VishalAakash18",
   },
   {
-    id: 1,
+    id: 10,
     name: "Manikandan",
     href: "#",
     position: "Co-Founder",
@@ -156,7 +156,7 @@ const teamlist = [
     twitterLink: "https://twitter.com/manicdon7",
   },
   {
-    id: 1,
+    id: 11,
     name: "Deepak Raja",
     href: "#",
     position: "Co-Founder",
@@ -171,7 +171,7 @@ const teamlist = [
     twitterLink: "",
   },
   {
-    id: 1,
+    id: 12,
     name: "Nishant SPK",
     href: "#",
     position: "Co-Founder",
@@ -186,7 +186,7 @@ const teamlist = [
     twitterLink: "",
   },
   {
-    id: 1,
+    id: 13,
     name: "Ravindran ",
     href: "#",
     position: "Co-Founder",
@@ -201,7 +201,7 @@ const teamlist = [
     twitterLink: "",
   },
   {
-    id: 1,
+    id: 14,
     name: "Sunil S",
     href: "#",
     position: "Co-Founder",
@@ -216,7 +216,7 @@ const teamlist = [
     twitterLink: "",
   },
   {
-    id: 1,
+    id: 15,
     name: "Santhosh Kumar S",
     href: "#",
     position: "Co-Founder",

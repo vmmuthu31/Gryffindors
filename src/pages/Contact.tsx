@@ -27,8 +27,8 @@ function Contact() {
 
     setForm({ ...form, [name]: value });
   };
-  const service_id = process.env.service_id;
-  const template_id = process.env.template_id;
+  const service_id = "service_qwgga5x";
+  const template_id = "template_4lbousk";
   console.log(typeof service_id);
   console.log(template_id);
 

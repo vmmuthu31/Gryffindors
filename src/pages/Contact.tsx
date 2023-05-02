@@ -3,11 +3,13 @@ import Navbar from "./components/Navbar";
 import Image from "next/image";
 import ContactImg from "../Assets/contact.png";
 import emailjs from "@emailjs/browser";
+
 interface FormState {
   name: string;
   email: string;
   message: string;
 }
+
 function Contact() {
   const [form, setForm] = useState<FormState>({
     name: "",
@@ -25,16 +27,22 @@ function Contact() {
 
     setForm({ ...form, [name]: value });
   };
+  const service_id = process.env.service_id;
+  const template_id = process.env.template_id;
+  console.log(typeof service_id);
+  console.log(template_id);
 
   const handleSubmit = (e: React.FormEvent) => {
     console.log("submitted");
     e.preventDefault();
     setLoading(true);
+    console.log(service_id);
+    console.log(template_id);
     //service id, template id, api public key
     emailjs
       .send(
-        "service_qwgga5x",
-        "template_4lbousk",
+        service_id,
+        template_id,
         {
           from_name: form.name,
           to_name: "Thirumurugan Sivalingam",

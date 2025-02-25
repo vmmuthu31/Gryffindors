@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Image from "next/image";
 import ContactImg from "../Assets/contact.png";
-import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 interface FormState {
   name: string;
@@ -27,47 +27,36 @@ function Contact() {
 
     setForm({ ...form, [name]: value });
   };
-  const service_id = "service_qwgga5x";
-  const template_id = "template_4lbousk";
-  console.log(typeof service_id);
-  console.log(template_id);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    console.log("submitted");
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    console.log(service_id);
-    console.log(template_id);
-    //service id, template id, api public key
-    emailjs
-      .send(
-        service_id,
-        template_id,
-        {
-          from_name: form.name,
-          to_name: "Thirumurugan Sivalingam",
-          from_email: "thirumurugan82003@gmail.com",
-          message: form.message,
-        },
-        "fHWYuIZubjz6j95Kn"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible");
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert("Something went wrong");
-        }
-      );
+        body: JSON.stringify(form),
+      });
+
+      if (response.ok) {
+        toast.success("Thank you. I will get back to you as soon as possible");
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Something went wrong");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -91,17 +80,18 @@ function Contact() {
           <div className="relative isolate overflow-hidden py-10 md:mx-40 contactcard mt-10 shadow-lg sm:rounded-3xl">
             <div className="sm:px-16 flex flex-col md:flex-row  lg:flex lg:gap-x-20 lg:px-10 lg:pt-0">
               <form onSubmit={handleSubmit}>
-                <div className=" flex flex-col  gap-4 md:w-1/2 bg-opacity-40 py-5 rounded-xl">
-                  <label className="text-xl pl-10 ">Your Name</label>
+                <div className="flex flex-col gap-4 md:w-1/2 bg-opacity-40 py-5 rounded-xl">
+                  <label className="text-xl pl-10">Your Name</label>
                   <input
-                    className="bg-[#151030] h-10 md:w-[400px] opacity-60 outline-none mx-10 bg-opacity-100 text-xl rounded-md px-3 "
+                    className="bg-[#151030] h-10 md:w-[400px] opacity-60 outline-none mx-10 bg-opacity-100 text-xl rounded-md px-3"
                     placeholder="What is your name?"
                     name="name"
                     value={form.name}
                     onChange={handleChange}
                     type="text"
+                    required
                   />
-                  <label className="text-xl pl-10 ">Your Email</label>
+                  <label className="text-xl pl-10">Your Email</label>
                   <input
                     className="bg-[#151030] h-10 md:w-[400px] outline-none opacity-60 mx-10 bg-opacity-100 text-xl rounded-md px-3"
                     placeholder="What is your email?"
@@ -109,19 +99,22 @@ function Contact() {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
+                    required
                   />
-                  <label className="text-xl pl-10 ">Description</label>
+                  <label className="text-xl pl-10">Description</label>
                   <textarea
                     className="bg-[#151030] h-32 md:w-[400px] outline-none opacity-60 mx-10 bg-opacity-100 text-xl rounded-md px-3"
-                    placeholder="What do you want to say??"
+                    placeholder="What do you want to say?"
                     name="message"
                     value={form.message}
                     onChange={handleChange}
+                    required
                   />
                   <div className="mt-2">
                     <button
                       type="submit"
-                      className=" ml-10 border-2 border-white px-6 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="ml-10 border-2 border-white px-6 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      disabled={loading}
                     >
                       {loading ? "Sending..." : "Send"}
                     </button>
@@ -130,9 +123,9 @@ function Contact() {
               </form>
               <div className="flex justify-center">
                 <Image
-                  className="md:w-[600px] h-full "
+                  className="md:w-[600px] h-full"
                   src={ContactImg}
-                  alt=""
+                  alt="Contact illustration"
                 />
               </div>
             </div>

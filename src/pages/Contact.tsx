@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Image from "next/image";
 import ContactImg from "../Assets/contact.png";
+import { toast } from "react-toastify";
 
 interface FormState {
   name: string;
@@ -41,7 +42,7 @@ function Contact() {
       });
 
       if (response.ok) {
-        alert("Thank you. I will get back to you as soon as possible");
+        toast.success("Thank you. I will get back to you as soon as possible");
         setForm({
           name: "",
           email: "",
@@ -52,7 +53,7 @@ function Contact() {
       }
     } catch (error) {
       console.error(error);
-      alert("Something went wrong");
+      toast.error("Something went wrong");
     } finally {
       setLoading(false);
     }

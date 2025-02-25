@@ -5,9 +5,9 @@ import Bgimg from "../Assets/1st.png";
 import Sidebg from "../Assets/sidebg.png";
 import { FiFigma } from "react-icons/fi";
 import Image from "next/image";
-import Slider from "react-slick";
 import ProfileCard from "./components/ProfileCard";
 import Navbar from "./components/Navbar";
+import Link from "next/link";
 
 export default function Main() {
   const [isHovered, setIsHovered] = useState(false);
@@ -90,12 +90,12 @@ export default function Main() {
               Our team of expert developers and designers work together!!
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
+              <Link
+                href="/Contact"
                 className="rounded-lg border-2 border-pink-500 px-4 py-2.5 text-sm sm:text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

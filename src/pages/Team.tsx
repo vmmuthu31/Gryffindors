@@ -141,8 +141,7 @@ const teamlist = [
     position: "Co-Founder",
     role: "UI/UX Desinger",
     contributor: "Open Source Contributor",
-    imageSrc:
-      "https://pbs.twimg.com/profile_images/1642018654920519682/jGhQ3fHe_400x400.jpg",
+    imageSrc: "https://avatars.githubusercontent.com/u/103201642?v=4",
     imageAlt: "",
     githublink: "",
     discordLink: "",
@@ -205,8 +204,7 @@ const teamlist = [
     position: "Co-Founder",
     role: "Web3-Developer",
     contributor: "Open Source Contributor",
-    imageSrc:
-      "https://pbs.twimg.com/profile_images/1601831104033755139/AUNQ0wR7_400x400.jpg",
+    imageSrc: "https://avatars.githubusercontent.com/u/67679146?v=4",
     imageAlt: "thiru-pic",
     githublink: "https://github.com/Thirumurugan7",
     discordLink: "https://discordapp.com/users/thiru7#4702",

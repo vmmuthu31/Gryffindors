@@ -37,8 +37,7 @@ export default function Main() {
     {
       name: "Thiru Murugan",
       email: "thirumurugan82003@gmail.com",
-      image:
-        "https://pbs.twimg.com/profile_images/1601831104033755139/AUNQ0wR7_400x400.jpg",
+      image: "https://avatars.githubusercontent.com/u/67679146?v=4",
       position: "Co-Founder",
       profession: "Web3-Developer",
       contributor: "Open Source Contributor",

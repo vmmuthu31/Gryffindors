@@ -2,133 +2,139 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html{
-    background: black;
-    color: white;
-
+html {
+  background: #fff8f8;
 }
 
-.headtag{
-    background: linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 38.02%, #5C24FF 75.83%, #D94FD5 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+.thunderfont {
+  @import url("../Fonts/Thunder-VF.ttf");
+  font-family: "Thunder", sans-serif;
+}
 
+.headtag {
+  background: linear-gradient(
+    90deg,
+    #ff3bff 0%,
+    #ecbfbf 38.02%,
+    #5c24ff 75.83%,
+    #d94fd5 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .profile-card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  .profile-card {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .profile-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .profile-card__footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-  
-  .profile-card__name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .profile-card__email {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .profile-card__hover-details {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .profile-card__hover-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .profile-card__hover-email {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .profile-card__hover-info {
-    font-size: 16px;
-    text-align: center;
-  }
-  
-  .profile-card:hover .profile-card__hover-details {
-    opacity: 1;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
 
-  .custombg{
-    background-color: rgba(255, 0, 255, 0.2);
-  }
+.profile-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
-  .achievecard{
-    background: rgba(48, 0, 255, 0.09);
-mix-blend-mode: normal;
-border: 2px solid #FFFFFF;
-box-shadow: 20px 20px 4px rgba(255, 255, 255, 0.45);
-border-radius: 40px;
-  }
+.profile-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .productcard{
-background: #040017;
-border: 1px solid #FFFFFF;
-box-shadow: 12px 12px 4px rgba(255, 255, 255, 0.2);
-border-radius: 30px;
-  }
+.profile-card__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 
-  .contactcard{
-    background: #100D25;
-border: 2px solid #FFFFFF;
-border-radius: 40px;
-  }
+.profile-card__name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-  .teamcard{
-background: rgba(48, 0, 255, 0.09);
-mix-blend-mode: normal;
-border: 2px solid #FFFFFF;
-box-shadow: 18px 18px 4px rgba(59, 59, 59, 0.56);
-border-radius: 40px;
-  }
+.profile-card__email {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.profile-card__hover-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.profile-card__hover-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-card__hover-email {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-card__hover-info {
+  font-size: 16px;
+  text-align: center;
+}
+
+.profile-card:hover .profile-card__hover-details {
+  opacity: 1;
+}
+
+.custombg {
+  background-color: rgba(255, 0, 255, 0.2);
+}
+
+.achievecard {
+  background: rgba(48, 0, 255, 0.09);
+  mix-blend-mode: normal;
+  border: 2px solid #ffffff;
+  box-shadow: 20px 20px 4px rgba(255, 255, 255, 0.45);
+  border-radius: 40px;
+}
+
+.productcard {
+  background: #040017;
+  border: 1px solid #ffffff;
+  box-shadow: 12px 12px 4px rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+}
+
+.contactcard {
+  background: #100d25;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+}
+
+.teamcard {
+  background: rgba(48, 0, 255, 0.09);
+  mix-blend-mode: normal;
+  border: 2px solid #ffffff;
+  box-shadow: 18px 18px 4px rgba(59, 59, 59, 0.56);
+  border-radius: 40px;
+}

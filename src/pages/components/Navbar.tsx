@@ -1,30 +1,43 @@
-import React,{ useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { AiFillGithub, AiFillYoutube,AiOutlineTwitter} from "react-icons/ai"
-import { FaLinkedinIn} from "react-icons/fa"
-import Link from "next/link"
-
+import React, { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { AiFillGithub, AiFillYoutube, AiOutlineTwitter } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
+import { dmSans } from "@/Fonts/font";
+import Image from "next/image";
+import logo from "@Assets/logo.svg";
+import Star from "@Assets/star.svg";
 
 const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: 'About' },
-    { name: 'Team', href: 'Team' },
-    { name: 'Products', href: 'Products' },
-    { name: 'Achievements', href: 'Achievements' },
-    { name: 'Contact Us', href: 'Contact' },
-  ]
+  { name: "About", href: "About" },
+  { name: "Our Services", href: "#" },
+  { name: "Our Team", href: "#" },
+];
 
 function Navbar() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div>
-         <header className="absolute inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <header className="absolute inset-x-0 top-0 z-50">
+        <nav
+          className="flex items-center justify-between p-6 py-14 lg:px-24"
+          aria-label="Global"
+        >
           <div className="flex lg:flex-1">
-            <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-            <p className='text-3xl font-bold'>Gryffindors</p>
+            <Link href="/" className="-m-1.5 flex items-center gap-3 p-1.5">
+              <Image
+                src={logo}
+                alt="Gryffindors"
+                className="h-[61px] w-[54px]"
+                width={100}
+                height={100}
+              />
+              <p
+                className={`text-[32px] text-[#770002] font-medium ${dmSans.className}`}
+              >
+                Gryffindors
+              </p>
             </Link>
           </div>
           <div className="flex lg:hidden">
@@ -39,25 +52,42 @@ function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} href={item.href} className="text-md font-semibold leading-6 ">
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`text-lg  leading-6 text-[#770002] ${dmSans.className}`}
+              >
                 {item.name}
               </Link>
             ))}
           </div>
-          <div className="hidden text-2xl space-x-3 lg:flex lg:flex-1 lg:justify-end">
-          <a href="https://github.com/GryffindorsDAO"  target="_blank"> <AiFillGithub /></a>
-          <a href="https://www.youtube.com/channel/UCAvUOFGXknT8ueKQQp6SRKQ"  target="_blank">   <AiFillYoutube /></a>
-          <a href="https://www.linkedin.com/in/gryffindors-guild-177295260/"  target="_blank">  <FaLinkedinIn /></a>
-         <a href="https://twitter.com/Gryffindors_W3"target="_blank"> <AiOutlineTwitter /></a>
+          <div className="hidden text-2xl space-x-2 lg:flex items-center lg:flex-1 lg:justify-end">
+            <Image
+              src={Star}
+              alt="star"
+              className="bg-[#770002] rounded-full w-[43px] h-[43px] p-2"
+              width={24}
+              height={24}
+            />
+            <button
+              className={`bg-[#770002] text-white uppercase px-8 text-lg py-2 rounded-full ${dmSans.className}`}
+            >
+              Contact Us
+            </button>
           </div>
         </nav>
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog
+          as="div"
+          className="lg:hidden"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+        >
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <p className='text-xl text-black font-bold'>Gryffindors</p>
+                <p className="text-xl text-black font-bold">Gryffindors</p>
               </Link>
               <button
                 type="button"
@@ -82,18 +112,36 @@ function Navbar() {
                   ))}
                 </div>
                 <div className=" text-2xl space-x-3 flex  text-black lg:justify-end">
-                <a href="https://github.com/GryffindorsDAO"  target="_blank"> <AiFillGithub /></a>
-          <a href="https://www.youtube.com/channel/UCAvUOFGXknT8ueKQQp6SRKQ"  target="_blank">   <AiFillYoutube /></a>
-          <a href="https://www.linkedin.com/in/gryffindors-guild-177295260/"  target="_blank">  <FaLinkedinIn /></a>
-         <a href="https://twitter.com/Gryffindors_W3"target="_blank"> <AiOutlineTwitter /></a>
-          </div>
+                  <a href="https://github.com/GryffindorsDAO" target="_blank">
+                    {" "}
+                    <AiFillGithub />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCAvUOFGXknT8ueKQQp6SRKQ"
+                    target="_blank"
+                  >
+                    {" "}
+                    <AiFillYoutube />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/gryffindors-guild-177295260/"
+                    target="_blank"
+                  >
+                    {" "}
+                    <FaLinkedinIn />
+                  </a>
+                  <a href="https://twitter.com/Gryffindors_W3" target="_blank">
+                    {" "}
+                    <AiOutlineTwitter />
+                  </a>
+                </div>
               </div>
             </div>
           </Dialog.Panel>
         </Dialog>
       </header>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
